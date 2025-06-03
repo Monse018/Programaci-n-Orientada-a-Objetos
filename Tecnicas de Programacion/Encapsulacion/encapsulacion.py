@@ -1,4 +1,5 @@
  #Proteger datos internos usando métodos públicos.
+#Protege datos internos usando métodos públicos.
 #Ejemplo Clase Cuenta Bancaria
 class CuentaBancaria:
     def __init__(self, saldo_inicial):
