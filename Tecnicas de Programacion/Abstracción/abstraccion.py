@@ -1,5 +1,3 @@
-#La abstracción permite ocultar la complejidad interna y mostrar solo lo esencial al usuario.
-#Ejemplo
 #Muestra solo lo esencial ocultando detalles complejos
 #Ejemplo Clase Animal 
 from abc import ABC, abstractmethod
