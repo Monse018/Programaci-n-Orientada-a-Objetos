@@ -1,0 +1,60 @@
+#Este programa demuestra el uso de constructores (__init__) y destructores (__del__) en Python para gestionar recursos de manera eficiente.
+
+class Archivo:
+    
+    def __init__(self, nombre_archivo, modo='r'):
+       
+        self.nombre_archivo = nombre_archivo
+        self.modo = modo
+        self.archivo = open(nombre_archivo, modo)
+        print(f"Archivo '{nombre_archivo}' abierto en modo '{modo}'")
+    
+    def leer(self):
+
+        return self.archivo.read()
+    
+    def escribir(self, contenido):
+       
+        self.archivo.write(contenido)
+    
+    def __del__(self):
+       
+        if hasattr(self, 'archivo') and not self.archivo.closed:
+            self.archivo.close()
+            print(f"Archivo '{self.nombre_archivo}' cerrado correctamente")
+
+
+class ContadorInstancias:
+    
+    contador = 0 
+    
+    def __init__(self):
+       
+        ContadorInstancias.contador += 1
+        self.id = ContadorInstancias.contador
+        print(f"Instancia {self.id} creada. Total: {ContadorInstancias.contador}")
+    
+    def __del__(self):
+        
+        ContadorInstancias.contador -= 1
+        print(f"Instancia {self.id} destruida. Restantes: {ContadorInstancias.contador}")
+
+
+def demostracion():
+    
+    print("\nDemostración de la clase Archivo")
+    archivo = Archivo("ejemplo.txt", "w")
+    archivo.escribir("Datos de ejemplo")
+    del archivo  
+
+    
+    print("\nDemostración de la clase ContadorInstancias")
+    instancias = [ContadorInstancias() for _ in range(3)]
+    print("Eliminando dos instancias...")
+    del instancias[0]
+    del instancias[1]
+
+
+if __name__ == "__main__":
+    demostracion()
+   
