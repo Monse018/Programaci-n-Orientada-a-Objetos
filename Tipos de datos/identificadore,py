@@ -1,0 +1,22 @@
+"""
+Ejemplo sobre Registro de Estudiantes
+Nos permite gestionar información básica de un estudiante (nombre, edad, promedio y asistencia).
+"""
+
+# Tipos de datos e identificadores en snake_case
+nombre_estudiante = "Miguel Angel Erazo Bastidas"       # string
+edad_estudiante = 21                    # integer
+promedio_calificaciones = 8.5           # float
+asistencia_regular = True               # boolean
+
+# Función para mostrar información del estudiante
+def mostrar_informacion_estudiante(nombre: str, edad: int, promedio: float, asistencia: bool) -> None:
+    
+    print(f"\nInformación del Estudiante")
+    print(f"Nombre: {nombre}")
+    print(f"Edad: {edad} años")
+    print(f"Promedio: {promedio:.2f}")
+    print(f"Asistencia Regular: {'Sí' if asistencia else 'No'}")
+
+# Llamada a la función
+mostrar_informacion_estudiante(nombre_estudiante, edad_estudiante, promedio_calificaciones, asistencia_regular)
