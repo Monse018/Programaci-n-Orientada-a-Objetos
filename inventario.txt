@@ -1,0 +1,10 @@
+[# Lista de productos iniciales para probar
+    productos_iniciales = [
+        Producto(001, "Laptop HP", 10, 820.60),
+        Producto(002, "Mouse inalámbrico", 25, 20.00),
+        Producto(003, "Teclado mecánico", 15, 60.25),
+        Producto(004, "Monitor 24 pulgadas", 6, 220.10),
+        Producto(005, "Auriculares Bluetooth", 18, 65.75),
+        Producto(006, "Webcam HD", 10, 30.50),
+        Producto(007, "Cables USB", 8, 5.00)
+    ]]
