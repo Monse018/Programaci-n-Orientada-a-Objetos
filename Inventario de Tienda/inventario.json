@@ -1,0 +1,44 @@
+[
+  {
+    "id": "001",
+    "nombre": "Laptop HP",
+    "cantidad": 10,
+    "precio": 820.60
+  },
+  {
+    "id": "002",
+    "nombre": "Mouse Logitech",
+    "cantidad": 25,
+    "precio": 19.99
+  },
+  {
+    "id": "003",
+    "nombre": "Teclado Mecánico",
+    "cantidad": 15,
+    "precio": 99.99
+  },
+  {
+    "id": "004",
+    "nombre": "Monitor Samsung",
+    "cantidad": 5,
+    "precio": 300.00
+  },
+  {
+    "id": "005",
+    "nombre": "Impresora Canon",
+    "cantidad": 7,
+    "precio": 150.00
+  },
+  {
+    "id": "006",
+    "nombre": "Webcam Logitech",
+    "cantidad": 12,
+    "precio": 75.00
+  },
+  {
+    "id": "007",
+    "nombre": "Auriculares Sony",
+    "cantidad": 20,
+    "precio": 120.00
+  }
+]
